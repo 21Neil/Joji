@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-image: url(img/Demon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+}
+
+h1 {
+    color: darkred;
+}
+
+header {
+    background-color:rgba(127,149,209,1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+    list-style-type: none;
+    width: 20%;
+}
+
+.aside {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+a {
+    text-decoration-line: none;
+    display: block;
+    background-color: pink;
+    padding: 10px;
+    margin: 10px 10px 0px 0px   ;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+    color: rgba(127,149,209,1);
+}
+
+a:hover {
+    background-color: darkred;
+}
+
+a:active {
+    transform: translateY(4px);
+}
+
+
+h2 {
+    position: absolute;
+    margin: 0px;
+    top: -30px;
+    left: 15px;
+    color: rgb(204, 255, 137);
+}
+
+.left2 {
+    position: relative;
+    float: left;
+    width: 80%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    margin: 15px 0px;
+    text-align: left;    
+    color: rgb(204, 255, 137);
+}
+
+p {
+    margin: 20px;
+}
+
+.img {
+    clear:both;
+}
+
+img {
+    width: 25vw;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(127,149,209,1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .left, .left2 {
+        width: 100%;
+    }
+    img {
+        width:100px;
+    }
+}
