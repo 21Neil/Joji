@@ -1,99 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;  
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(31, 31, 31, 0); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136 , 0.5);
+    border-radius: 10px; 
+}
+  
 body {
+    background-color: black;
     text-align: center;
+    overflow: overlay;
     font-family: 'Nunito', sans-serif;
     background-image: url(img/Demon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 50%;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 h1 {
-    color: darkred;
+    margin: 0px;
+    color: rgb(175, 0, 0);
+    font-size: 4rem;
 }
 
 header {
-    background-color:rgba(127,149,209,1);
-    padding: 10px;
-    border-radius: 10px;
     margin-bottom: 10px;
 }
 
-.left {
+aside {
     float: left;
     list-style-type: none;
     width: 20%;
 }
 
-.aside {
+aside ul {
     list-style-type: none;
-    padding-inline-start: 0px;
+    padding: 0px;
 }
 
 a {
     text-decoration-line: none;
     display: block;
-    background-color: pink;
+    background-color: rgba(127,149,209,1);
     padding: 10px;
     margin: 10px 10px 0px 0px   ;
     border-radius: 5px;
     box-shadow: 5px 5px 5px gray;
-    color: rgba(127,149,209,1);
+    color: #323A52;
 }
 
 a:hover {
-    background-color: darkred;
+    background-color: rgb(175, 0, 0);
 }
 
 a:active {
     transform: translateY(4px);
 }
 
-
-h2 {
-    position: absolute;
-    margin: 0px;
-    top: -30px;
-    left: 15px;
-    color: rgb(204, 255, 137);
+div{
+    width: 80%;
+    float: left;
 }
 
-.left2 {
-    position: relative;
-    float: left;
-    width: 80%;
-    border: 2px solid wheat;
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 5px gray;
     border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(3px);
     margin: 15px 0px;
+    padding: 20px;
     text-align: left;    
-    color: rgb(204, 255, 137);
+    color: #eeeeee;
 }
 
 p {
     margin: 20px;
+    line-height: 1.5rem;
+    letter-spacing: 0.3rem;
 }
 
-.img {
+.imgWarp {
     clear:both;
+    margin: auto 5vw;
+    display: flex;
+    justify-content: space-between;
 }
 
 img {
     width: 25vw;
     border-radius: 10px;
+    
 }
 
 footer {
     background-color: rgba(127,149,209,1);
     padding: 10px;
     border-radius: 10px;
+    margin: 15px auto;
+    bottom: 0px;
 }
 
 @media (max-width: 600px) {
-    .left, .left2 {
+    aside, div {
         width: 100%;
+    }
+    .container {
+        margin-right: 10px;
     }
     img {
         width:100px;
